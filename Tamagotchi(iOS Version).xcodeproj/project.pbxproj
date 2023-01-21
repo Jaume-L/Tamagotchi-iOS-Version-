@@ -14,6 +14,7 @@
 		E381ECA4297C0010008A8C5E /* Tamagotchi_iOS_Version_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381ECA3297C0010008A8C5E /* Tamagotchi_iOS_Version_Tests.swift */; };
 		E381ECAE297C0010008A8C5E /* Tamagotchi_iOS_Version_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381ECAD297C0010008A8C5E /* Tamagotchi_iOS_Version_UITests.swift */; };
 		E381ECB0297C0010008A8C5E /* Tamagotchi_iOS_Version_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381ECAF297C0010008A8C5E /* Tamagotchi_iOS_Version_UITestsLaunchTests.swift */; };
+		E381ECBD297C0057008A8C5E /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381ECBC297C0057008A8C5E /* Tamagotchi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E381ECA9297C0010008A8C5E /* Tamagotchi(iOS Version)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tamagotchi(iOS Version)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E381ECAD297C0010008A8C5E /* Tamagotchi_iOS_Version_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi_iOS_Version_UITests.swift; sourceTree = "<group>"; };
 		E381ECAF297C0010008A8C5E /* Tamagotchi_iOS_Version_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi_iOS_Version_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E381ECBC297C0057008A8C5E /* Tamagotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				E381EC94297C000C008A8C5E /* ContentView.swift */,
 				E381EC96297C0010008A8C5E /* Assets.xcassets */,
 				E381EC98297C0010008A8C5E /* Preview Content */,
+				E381ECBC297C0057008A8C5E /* Tamagotchi.swift */,
 			);
 			path = "Tamagotchi(iOS Version)";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E381EC95297C000C008A8C5E /* ContentView.swift in Sources */,
+				E381ECBD297C0057008A8C5E /* Tamagotchi.swift in Sources */,
 				E381EC93297C000C008A8C5E /* Tamagotchi_iOS_Version_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
