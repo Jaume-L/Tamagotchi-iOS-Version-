@@ -15,7 +15,7 @@ struct ContentView: View {
             Section {
                 Text("\(tamagotchi.displayStats())")
             }
-            VStack(alignment: .leading, spacing: 5) {
+            Section {
                 Button("Eat Snack", action: {
                     tamagotchi.eatSnack()
                 })
@@ -25,7 +25,20 @@ struct ContentView: View {
                 Button("Play Game", action: {
                     tamagotchi.playGame()
                 })
+                Button("Give Medicine", action: {
+                    tamagotchi.medicate()
+                })
+                Button("Clean Up", action: {
+                    tamagotchi.cleanUp()
+                })
             }
+            Section {
+                Image("tamagot")
+            }
+        }.onAppear {
+            tamagotchi.excrete()
+            tamagotchi.startAging()
+            tamagotchi.getHungry()
         }
     }
 }
