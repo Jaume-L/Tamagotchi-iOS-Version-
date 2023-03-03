@@ -18,19 +18,19 @@ struct ContentView: View {
             Section {
                 Button("Eat Snack", action: {
                     tamagotchi.eatSnack()
-                })
+                }).disabled(tamagotchi.getIsAlive() == false)
                 Button("Eat Meal", action: {
                     tamagotchi.eatMeal()
-                })
+                }).disabled(tamagotchi.getIsAlive() == false)
                 Button("Play Game", action: {
                     tamagotchi.playGame()
-                })
+                }).disabled(tamagotchi.getIsAlive() == false)
                 Button("Give Medicine", action: {
                     tamagotchi.medicate()
-                })
+                }).disabled(tamagotchi.getIsAlive() == false)
                 Button("Clean Up", action: {
                     tamagotchi.cleanUp()
-                })
+                }).disabled(tamagotchi.getIsAlive() == false)
             }
             Section {
                 Image("tamagot")

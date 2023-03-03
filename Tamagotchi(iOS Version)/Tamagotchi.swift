@@ -143,24 +143,30 @@ class Tamagotchi: ObservableObject {
     
     func excrete() {
         timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) {timer in
-            if self.weight > 2 {
-                self.setDroppingCount(self.droppingCount + 1)
-                self.setHappiness(self.happiness - 2)
-                self.setWeight(self.weight - 1)
-                self.setHunger(self.hunger - 2)
+            if self.isAlive {
+                if self.weight > 2 {
+                    self.setDroppingCount(self.droppingCount + 1)
+                    self.setHappiness(self.happiness - 2)
+                    self.setWeight(self.weight - 1)
+                    self.setHunger(self.hunger - 2)
+                }
             }
         }
     }
     
     func startAging() {
         timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) {timer in
-            self.setAge(self.age + 1)
+            if self.isAlive {
+                self.setAge(self.age + 1)
+            }
         }
     }
     
     func getHungry() {
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) {timer in
-            self.setHunger(self.hunger - 1)
+            if self.isAlive {
+                self.setHunger(self.hunger - 1)
+            }
         }
     }
     
